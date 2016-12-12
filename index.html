@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <meta charset="UTF-8">
+    <title>Liczenie skladki ubezpieczeniowej</title>
+    <link rel="stylesheet" href="css/main.css">
+  	<script type="text/JavaScript" src="js/script.js"></script>
+</head>
+<body>
+	
+<nav class='nav'>
+    <div class='container'>
+        <div class="navHeader"></div>
+    </div>
+</nav>
+
+<div class="container">
+    <div class="page-title">
+        <h1>Licznik składki ubezpieczeniowej</h1>
+        <hr>
+    </div>
+
+    <div class="panel">
+        <form name="calculator">
+            <div class="amount">
+		    	<label>Suma ubezpienczenia:</label>
+	            <input type="text" id="number" onload="Sum()">
+	        <div>
+                        
+            <div class="payments">
+	            <label>Formy płatności:</label>
+	            <label><input type="checkbox" class="rata-1" data-price="0.98">jednorazowa</label>
+	            <label><input type="checkbox" class="rata-2" data-price="1">2 raty</label>
+	            <label><input type="checkbox" class="rata-4" data-price="1.04">4 raty</label>
+	        </div>
+
+	        <div class="damage">
+	        	<label>Bezszkodowe ubezpieczenie:</label>
+	        	<label><input type="checkbox" data-price="0.95">tak</label>
+	        	<label><input type="checkbox" data-price="1.08">nie</label>
+	        </div>
+
+	        <p>
+            <button>Oczyść</button>
+            </p>
+
+            <div class="premium">
+            	<p>Kwota składki:<span id="price">0zł</span>
+            	</p>
+            </div>
+			
+
+
+        </form>
+    </div>
+
+</body>
+</html>
+
